@@ -1,0 +1,20 @@
+{
+  "name": "brendanbarr.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run watch-css & npm run start-dev-server",
+    "watch-css": "postcss src/css/index.css -o site/css/index.css -w",
+    "start-dev-server": "static site --spa"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "node-static": "^0.7.11",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.2.0"
+  }
+}

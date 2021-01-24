@@ -5,16 +5,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm run watch-css & npm run start-dev-server",
-    "watch-css": "postcss src/css/index.css -o site/css/index.css -w",
+    "watch-css": "nodemon -w src/index.css -x npx tailwindcss build src/index.css -o site/css/index.css",
     "start-dev-server": "static site --spa"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "autoprefixer": "^9.7.4",
+  "devDependencies": {
+    "tailwindcss": "^1.2.0",
     "node-static": "^0.7.11",
-    "postcss": "^7.0.27",
-    "postcss-cli": "^7.1.0",
-    "tailwindcss": "^1.2.0"
+    "nodemon": "^2.0.4"
   }
 }

@@ -1,58 +1,121 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    <title>Brendan Barr - Programmer, Entrepreneur, Mentor in Los Angeles</title>
+    <title>Brendan Barr - Web developer for hire</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin" rel="stylesheet">
     <link rel="stylesheet" href="/css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,800&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="description" content="Brendan Barr is a web developer obsessed with building clean, user-focused experiences.">
+    <meta name="keywords" content="HTML, CSS, Javascript, Web Development, Programming">
 	</head>
-	<body class="">
-    <div class="container mx-auto pt-24">
-      <header></header>
-      <div class="text-center mb-20">
-        <h1 class="font-serif font-light text-5xl">Brendan Barr</h1>
-        <p class="para">
-          Javascript Developer with 12+ years of experience
-        </p>
+	<body>
+
+    <div class="container mx-auto px-6 relative">
+      <div class="lg:fixed lg:top-0 lg:bottom-0 leftbar pt-20">
+        <!--<h1 class="font-semibold text-3xl mb-6 leading-none">Folks around here call me <span class="underline">Brendan Barr</span>.</h1>-->
+        <div class="font-light text-lg lg:max-w-xl m-auto">
+          Hi, my name is <strong>Brendan Barr</strong>. I am a web developer obsessed with building clean, user-focused experiences. 
+          For over 12 years I have worked at agencies, startups, and on several of my own products. 
+          I have also been exclusively remote since 2015.
+          <div class="block mt-6">Ready to chat? <a href="mailto:brendan@brendanbarr.com">Contact me</a>. Want to learn more? Check out my code on <a target="_blank" href="https://github.com/bbarr">Github</a> or read my <a target="_blank" href="https://brendan.prosaic.blog">blog</a>.</div>
+
+        </div>
+        <div class="mt-10 border-t border-gray-200 pt-10 mx-auto md:max-w-sm lg:max-w-none">
+          <div class="text-center">Here are some companies for whom I have written code</div>
+          <div class="logos">
+            <img src="./reebok-logo.png">
+            <img src="./dr-pepper-logo.png">
+            <img src="./att-logo.png">
+            <img src="./discover-logo.png">
+            <img src="./diners-logo.png">
+            <img style="width: 100px" src="./conde-logo.png">
+            <img src="./nike-logo.png">
+          </div>
+        </div>
       </div>
-      <div class="para mb-20">
-        <div class="text-2xl underline">TLDR;</div>
-        I write clear, concise code with an emphasis on functionality rather than trendiness. Business owners hire me to create
-        custom solutions that directly address their painpoints without resorting to superfluous software dependencies and premature optimizations.
-      </div>
-      <div class="para">
-        <div class="text-2xl underline">Skills in years of experience</div>
-        <div class="skill">
-          Javascript
-          <div class="js-rank rank" data-rank="12"></div>
+      <div class="rightbar pt-20">
+        <div class="text-xl uppercase text-gray-700">Some recent clients</div>
+        <div>
+          <div class="product">
+            <h2><a target="_blank" href="https://www.codiscope.com">Codiscope</a></h2>
+            <div class="text-gray-700">
+              Built an eLearning platform to help replace the Flash-based legacy version. Helped redefine the level of abstraction for course content for easier consumption across clients.
+            </div>
+          </div>
+          <div class="product">
+            <h2><a target="_blank" href="https://www.veestro.com">Veestro</a></h2>
+            <div class="text-gray-700">
+              Helped integrate Shopify store with ReCharge and redevelop shopfront. Veestro became the inspiration and first client of Cloudhooks (see below in Founded / Co-founded).
+            </div>
+          </div>
+          <div class="product">
+            <h2><a target="_blank" href="https://www.tortoiselabs.com">Conde Nast</a></h2>
+            <div class="text-gray-700">
+              Built an infinitely-loading listicle component that handled memory and DOM size limitations while allowing non-janky scrolling in both directions.
+            </div>
+          </div>
+          <div class="product">
+            <h2><a disabled>Slap Entertainment, LLC</a></h2>
+            <div class="text-gray-700">
+              This was an unexpected gig that came out of a freelancing request to build a better video app for the mobile web.
+              Hand-rolled an advanced video player in vanilla JS, without access to Media Source Extensions due to mobile browser incompatibilities. Link is not clickable due to the project being on pause, and the NSFW nature of it.
+            </div>
+          </div>
         </div>
-        <div class="skill">
-          HTML/CSS
-          <div class="js-rank rank" data-rank="12"></div>
+        <div class="text-xl uppercase text-gray-700 mt-6">Projects</div>
+        <div>
+          <!--
+          <div class="product">
+            <h2><a target="_blank" href="https://www.tortoiselabs.com">Tapnswipe.js</a></h2>
+            <div class="text-gray-700">
+              Tapnswipe.js is a zero-dependency video player library that supports Instagram story-style interactions
+              for mobile web.
+            </div>
+          </div>
+          -->
+          <div class="product">
+            <h2><a target="_blank" href="https://www.tortoiselabs.com">Medium.js</a></h2>
+            <div class="text-gray-700">
+              Medium is my confusingly named communicating sequential processes (CSP) library that provides what I believe
+              is the simplest implementation possible for Javascript with a reasonable feature set. Use channels to
+              coordinate between various async workflows.
+            </div>
+          </div>
         </div>
-        <div class="skill">
-          Node.js
-          <div class="js-rank rank" data-rank="8"></div>
-        </div>
-        <div class="skill">
-          Shopify (Themes/API)
-          <div class="js-rank rank" data-rank="8"></div>
-        </div>
-        <div class="skill">
-          React (Preact/Inferno)
-          <div class="js-rank rank" data-rank="6"></div>
-        </div>
-        <div class="skill">
-          Firebase
-          <div class="js-rank rank" data-rank="5"></div>
-        </div>
-        <div class="skill">
-          PostgreSQL
-          <div class="js-rank rank" data-rank="4"></div>
+        <div>
+          <div class="text-xl uppercase text-gray-700 mt-6">Founded and Co-founded</div>
+          <div class="product">
+            <h2><a target="_blank" href="https://prosaic.blog">Prosaic</a></h2>
+            <div class="text-gray-700">
+              Prosaic is an independent publishing platform that combines the ease-of-use of a note-taking app with the power of a static site generator, making it easy for anyone to create a personal weblog.
+            </div>
+          </div>
+          <div class="product">
+            <h2><a target="_blank" href="https://www.tortoiselabs.com">Tortoise Labs</a></h2>
+            <div class="text-gray-700">
+              Tortoise Labs is a start-up school and incubator that helps people learn how to make things that others truly want.
+              Our focus is always on communicating early and often with potential customers, and keeping all implemented technology and workflows as stripped down as possible.
+            </div>
+          </div>
+          <div class="product">
+            <h2><a target="_blank" href="https://cloudhooks.dev">Cloudhooks</a></h2>
+            <div class="text-gray-700">
+              Cloudhooks makes working with Shopify webhooks as simple as possible, so you can focus on writing event-driven code instead of managing a server.
+            </div>
+          </div>
+          <div class="product">
+            <h2><a target="_blank" href="https://www.eariously.com">Eariously</a></h2>
+            <div class="text-gray-700">
+              Eariously is a text-to-speech platform that aims to convert any text into high-quality, shareable audio.
+              The product is embeddable as a player widget in any page that contains article-like text, where it will auto-parse and convert the main content.
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <script src="/js/index.js" type="module"></script>
+    <footer>
+    </footer>
   </body>
 </html>

@@ -1,7 +1,15 @@
 module.exports = {
+  purge: {
+    enabled: true,
+    content: ['./site/**/*.html'],
+  },
   theme: {
-    fontFamily: {
-      serif: [ '"Zilla Slab"' ]
+    extend: {
+      colors: {
+        pink: {
+          500: 'rgb(255, 160, 160)'
+        }
+      }
     }
   },
   variants: {},

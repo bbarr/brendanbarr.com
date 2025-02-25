@@ -7,6 +7,10 @@ html, body {
   -webkit-font-smoothing: antialiased !important;
 }
 
+.callout {
+  @apply absolute bottom-0 p-4 border rounded-lg border-gray-200 w-full mb-5 bg-gray-800 text-white;
+}
+
 .brand-text {
   @apply text-pink-500;
 }

@@ -41,6 +41,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family);
+  margin: 0;
 }
 
 p {
@@ -75,7 +76,41 @@ a:hover {
 }
 
 .container-sm {
+  padding: 0 var(--spacing-xl);
   max-width: var(--max-width-content);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body > .container, body > .container-sm {
+  padding-top: calc(var(--header-height) + var(--spacing-lg));
+}
+
+.post-meta h2 {
+  font-size: var(--font-size-xl);
+}
+
+.post-meta {
+  margin-bottom: var(--spacing-md);
+}
+
+.post-meta > div {
+  margin-top: var(--spacing-xs);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-xs);
+}
+
+.post-meta time {
+  color: var(--color-secondary);
+  display: block;
+}
+
+.note.warning {
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-highlight);
+  padding: var(--spacing-sm);
 }
 
 body > header {
@@ -107,13 +142,6 @@ body > header h1 svg {
 body > header nav {
   display: flex;
   gap: var(--spacing-sm);
-}
-
-.page-container {
-  padding-top: calc(var(--header-height) + var(--spacing-lg));
-  max-width: var(--max-width-content);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 h2 {
@@ -226,7 +254,7 @@ h2 {
   color: var(--color-secondary);
 }
 
-time {
+.articles time {
   text-transform: uppercase;
   font-size: var(--font-size-base);
   color: var(--color-secondary);

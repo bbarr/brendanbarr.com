@@ -7,6 +7,7 @@
     <meta name="description" content="{{ description }}">
     <meta name="keywords" content="{{ keywords }}">
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/code-theme.css">
   </head>
   <body>
     <header>
@@ -30,7 +31,20 @@
         </nav>
       </div>
     </header>
-    {{ content }}
+    <div class="container-sm">
+      {{ if tags.includes('post') }}
+      <div class="post-meta">
+        <h2>{{ title }}</h2>
+        <div>
+          <time>{{ date |> date('PPP') }}</time>
+          {{ for tag of tags |> filter(t => t !== 'post') }}
+          <span>#{{ tag }}</span>
+          {{ /for }}
+        </div>
+      </div>
+      {{ /if }}
+      {{ content }}
+    </div>
     <div class="container container-sm">
       <footer>
         <p>

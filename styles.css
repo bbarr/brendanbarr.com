@@ -17,6 +17,7 @@
   --spacing-lg: 3rem;
   --spacing-xl: 5rem;
   --header-height: 5rem;
+  --font-size-sm: .8rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.5rem;
@@ -191,21 +192,57 @@ h2 {
   width: 1rem;
 }
 
-.articles {
-  padding-top: var(--spacing-lg);
+#home .links {
+  padding-bottom: var(--spacing-lg);
 }
 
-#blog .articles {
-  padding-top: 0;
+.articles {
+  padding-top: var(--spacing-md);
+}
+
+.articles > div {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.articles h3 {
+  margin: 0;
+  font-size: var(--font-size-lg);
+}
+
+.articles h3 a {
+  border-bottom: 1px dotted var(--color-link);
+}
+
+.articles h3 a:hover {
+  border-bottom: 1px solid var(--color-link);
+}
+
+.tags {
+  display: flex;
+  padding-top: var(--spacing-xs);
+  gap: var(--spacing-xs);
+  color: var(--color-secondary);
+}
+
+time {
+  text-transform: uppercase;
+  font-size: var(--font-size-base);
+  color: var(--color-secondary);
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5em;
+  font-weight: var(--font-weight-semibold);
+}
+
+.tags div {
+  text-transform: uppercase;
+  font-size: .8em;
 }
 
 h3 {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
-}
-
-.articles h3 {
-  margin: 0 0 var(--spacing-sm);
 }
 
 footer {

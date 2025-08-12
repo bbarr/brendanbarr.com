@@ -36,18 +36,18 @@ keywords: HTML, CSS, Javascript, Web Development, Programming
   </div>
   -->
   <div class="articles">
-    <div>
-      {{ for post of search.pages("post", "order date", -3) }}
-        <article>
-          <header>
-            <h4>{{ post.title }}</h4>
-            <time>{{ post.date |> date('PPP') }}</time>
-          </header>
-          <p>
-            {{ post.summary }}
-          </p>
-        </article>
-      {{ /for }}
-    </div>
+    {{ for post of search.pages("post", "date=desc", -3) }}
+      <div>
+        <time>{{ post.date |> date('dd MMM yyyy') }}</time>
+        <div>
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <div class="tags">
+            {{ for tag of post.tags |> filter(t => t !== 'post') }}
+            <div>#{{ tag }}</div>
+            {{ /for }}
+          </div>
+        </div>
+      </div>
+    {{ /for }}
   </div>
 </div>

@@ -94,6 +94,16 @@ body > .container, body > .container-sm {
   margin-bottom: var(--spacing-md);
 }
 
+#home .articles-wrapper h4 {
+  margin-top: var(--spacing-md);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+}
+
+#home .links h4 {
+  margin-bottom: var(--spacing-sm);
+}
+
 .post-meta > div {
   margin-top: var(--spacing-xs);
   display: flex;

@@ -2,8 +2,7 @@ import lume from "lume/mod.ts";
 import date from "lume/plugins/date.ts";
 import codeHighlight from "lume/plugins/code_highlight.ts";
 import lang_javascript from "npm:highlight.js/lib/languages/javascript";
-import highlight from "lume/plugins/code_highlight.ts";
-
+import favicon from "lume/plugins/favicon.ts";
 
 const site = lume({
   server: {
@@ -12,6 +11,7 @@ const site = lume({
 });
 site.add("/styles.css");
 site.add("/me.jpg");
+site.add('favicon', '.');
 site.use(date());
 site.use(codeHighlight({
   theme: {

@@ -23,12 +23,12 @@ keywords: HTML, CSS, Javascript, Web Development, Programming
       </a>
     </nav>
   </div>
-  <div>
-    <h3>Latest Posts</h3>
+  <div class="articles-wrapper">
+    <h4>Latest Posts</h4>
     <div class="articles">
       {{ for post of search.pages("post", "date=desc", -3) }}
         <div>
-          <time>{{ post.date |> date('dd MMM yyyy') }}</time>
+          <time>{{ post.date |> date('yyyy/MM/dd') }}</time>
           <div>
             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
             <div class="tags">

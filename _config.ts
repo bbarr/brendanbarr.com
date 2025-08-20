@@ -10,7 +10,7 @@ const site = lume({
   },
 });
 site.add("/styles.css");
-site.add("/me.jpg");
+site.add('images', 'images');
 site.add('favicon', '.');
 site.use(date());
 site.use(codeHighlight({

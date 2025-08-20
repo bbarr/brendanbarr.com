@@ -26,7 +26,7 @@ keywords: HTML, CSS, Javascript, Web Development, Programming
   <div class="articles-wrapper">
     <h4>Latest Posts</h4>
     <div class="articles">
-      {{ for post of search.pages("post", "date=desc", -3) }}
+      {{ for post of search.pages("post", "date=desc", 3) }}
         <div>
           <time>{{ post.date |> date('yyyy/MM/dd') }}</time>
           <div>
